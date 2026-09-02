@@ -79,28 +79,27 @@ const COLORS := {
 @export var level_rect: Rect2 = Rect2(137, 20, 128, 46)
 @export var pause_rect: Rect2 = Rect2(304, 17, 68, 54)
 @export var progress_rect: Rect2 = Rect2(18, 82, 172, 28)
-@export var belt_panel_rect: Rect2 = Rect2(12, 120, 366, 430)
+@export var belt_panel_rect: Rect2 = Rect2(12, 120, 366, 390)
 @export var belt_path_points: PackedVector2Array = PackedVector2Array([
-	Vector2(0.18, 0.91),
-	Vector2(0.92, 0.91),
-	Vector2(0.92, 0.10),
-	Vector2(0.12, 0.10),
-	Vector2(0.12, 0.70),
-	Vector2(0.18, 0.91)
+	Vector2(0.10, 0.10),
+	Vector2(0.88, 0.10),
+	Vector2(0.90, 0.90),
+	Vector2(0.15, 0.90),
+	Vector2(0.15, 0.31)
 ])
-@export var materials_panel_rect: Rect2 = Rect2(12, 558, 366, 274)
-@export var recycle_tray_rect: Rect2 = Rect2(48, 590, 294, 62)
+@export var materials_panel_rect: Rect2 = Rect2(12, 520, 366, 312)
+@export var recycle_tray_rect: Rect2 = Rect2(48, 550, 294, 62)
 @export var recycle_slot_size: Vector2 = Vector2(52, 66)
-@export var board_layout_rect: Rect2 = Rect2(99, 219, 192, 192)
-@export var material_lane_1_rect: Rect2 = Rect2(18, 658, 82, 166)
-@export var material_lane_2_rect: Rect2 = Rect2(103, 658, 82, 166)
-@export var material_lane_3_rect: Rect2 = Rect2(188, 658, 82, 166)
-@export var material_lane_4_rect: Rect2 = Rect2(273, 658, 82, 166)
+@export var board_layout_rect: Rect2 = Rect2(78, 193, 236, 236)
+@export var material_lane_1_rect: Rect2 = Rect2(18, 618, 82, 166)
+@export var material_lane_2_rect: Rect2 = Rect2(103, 618, 82, 166)
+@export var material_lane_3_rect: Rect2 = Rect2(188, 618, 82, 166)
+@export var material_lane_4_rect: Rect2 = Rect2(273, 618, 82, 166)
 @export var order_bubble_size: Vector2 = Vector2(52, 34)
 @export var order_bubble_gap: float = 4.0
-@export var order_bubble_offset: Vector2 = Vector2(20, -59)
+@export var order_bubble_offset: Vector2 = Vector2(34, 6)
 @export var dynamic_machine_size: Vector2 = Vector2(58, 58)
-@export var machine_counter_offset: Vector2 = Vector2(-64, -64)
+@export var machine_counter_offset: Vector2 = Vector2(20, -38)
 @export var machine_counter_size: Vector2 = Vector2(52, 24)
 
 var state: Dictionary = {}

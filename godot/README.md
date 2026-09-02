@@ -18,7 +18,7 @@
 
 美术替换入口在主场景 Inspector 的 `Art Slots` 分类。可以替换背景、顶部 HUD、订单气泡、棋盘、传送带、五格待编制区、纺织机左/底/右方向资源、5 种毛线球和 5 种已纺织块；没有填入的插槽会继续使用脚本绘制的占位样式。具体顺序见 `assets/README.md`。
 
-布局替换入口在同一个节点 Inspector 的 `Layout - 390x844` 分类。`board_layout_rect` 是绣图区，`belt_panel_rect` 是传送带区域，`recycle_tray_rect` 是中央五格待编制区，4 个 `material_lane_*_rect` 是四条材料列；`belt_path_points` 控制动态纺织机行进轨迹，`dynamic_machine_size` 控制机器大小，`machine_counter_offset` 控制起点计数位置，`machine_counter_size` 控制计数底图尺寸，`order_bubble_offset` 控制整组订单气泡相对传送带起点的位置。顶部 HUD 和底部材料区也可以独立调整。建议保持虚拟画布 390x844 的坐标范围，运行时会自动等比缩放到窗口。
+布局替换入口在同一个节点 Inspector 的 `Layout - 390x844` 分类。`board_layout_rect` 是绣图区，`belt_panel_rect` 是传送带区域，`recycle_tray_rect` 是中央五格待编制区，4 个 `material_lane_*_rect` 是四条材料列；`belt_path_points` 控制动态纺织机行进轨迹，`dynamic_machine_size` 控制机器大小，`machine_counter_offset` 控制起点计数位置，`machine_counter_size` 控制计数底图尺寸，`order_bubble_offset` 控制整组订单气泡相对传送带起点的位置。顶部 HUD 和底部材料区也可以独立调整。当前传送带资源按左上角起点、顶部向右、右侧向下、底部向左、左侧向上至起点下方终点的箭头路线配置；新传送带图片位于 `assets/conveyor.png`。建议保持虚拟画布 390x844 的坐标范围，运行时会自动等比缩放到窗口。
 
 关卡图形编辑入口在 `Main` 节点 Inspector 的 `Level Editing` 分类。`pattern_grid_size.x` 是列数，`pattern_grid_size.y` 是行数；`pattern_layout` 是多行字符网格。使用 `.` 留空，使用 `c/y/g/l`（或 `b`）/`d` 分别放置珊瑚红、向日黄、叶绿色、湖蓝色/深蓝色块。空格也代表留空并保留列位置。行数不足会补空行，超出尺寸会截断，非法字符会按空格处理。
 
