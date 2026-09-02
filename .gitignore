@@ -1,0 +1,19 @@
+# Godot editor and import cache
+godot/.godot/
+godot/.import/
+**/.godot/
+**/.import/
+
+# Godot generated export/build output
+godot/bin/
+godot/build/
+godot/.build/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.swp
+.vscode/
+.idea/

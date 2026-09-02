@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3eee4" />
+    <title>绣线工坊 · 十字绣传送带</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-lockup">
+          <div class="brand-mark" aria-hidden="true"><span></span><span></span></div>
+          <div>
+            <p class="eyebrow">THREAD &amp; NEEDLE STUDIO</p>
+            <h1>绣线工坊</h1>
+          </div>
+        </div>
+        <div class="level-badge"><span class="level-dot"></span>第 01 关 · 花园徽章</div>
+        <div class="top-actions">
+          <div class="stat-chip progress-chip">
+            <span class="chip-label">绣制进度</span>
+            <strong id="progressValue">0 / 39</strong>
+          </div>
+          <div class="stat-chip recycle-chip">
+            <span class="chip-label">回收区</span>
+            <strong id="recycleValue">0 / 5</strong>
+          </div>
+          <button class="icon-button" id="resetButton" type="button" title="重新开始" aria-label="重新开始">↻</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="workspace" aria-label="十字绣工作台">
+          <article class="conveyor-panel panel">
+            <div class="panel-heading conveyor-heading">
+              <div>
+                <p class="section-kicker">02 / THREAD LINE</p>
+                <h2>环形绣线传送带</h2>
+              </div>
+              <div class="belt-status" id="beltStatus"><span class="status-light"></span>等待补给</div>
+            </div>
+
+            <div class="loop-stage">
+              <div class="loop-track" id="beltTrack">
+                <div class="loop-belt-surface">
+                  <span class="belt-arrow arrow-one">›</span><span class="belt-arrow arrow-two">›</span><span class="belt-arrow arrow-three">›</span><span class="belt-arrow arrow-four">›</span><span class="belt-arrow arrow-five">›</span><span class="belt-arrow arrow-six">›</span>
+                </div>
+                <div class="loop-inner">
+                  <div class="inner-board-heading">
+                    <div>
+                      <p class="section-kicker">01 / STITCH BOARD</p>
+                      <h2>待绣图案</h2>
+                    </div>
+                  </div>
+                  <div class="stitch-board-wrap">
+                    <div class="board-ruler ruler-top" aria-hidden="true"><span>01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span><span>07</span><span>08</span><span>09</span><span>10</span></div>
+                    <div class="board-ruler ruler-left" aria-hidden="true"><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span></div>
+                    <div class="stitch-board" id="stitchBoard" aria-label="十乘十十字绣点阵"></div>
+                    <div class="board-corner" aria-hidden="true">A01</div>
+                  </div>
+                  <div class="board-footer">
+                    <div class="legend" id="colorLegend"></div>
+                    <span class="board-note">每个点位需要一枚同色线团</span>
+                  </div>
+                </div>
+                <div class="machine-row" id="machineRow"></div>
+                <div class="conveyor-balls" id="conveyorBalls"></div>
+                <div class="loop-start"><span></span>入口</div>
+                <div class="recycle-zone" id="recycleZone">
+                <div class="recycle-lid"><span>回收</span><i></i></div>
+                <div class="recycle-body">
+                  <div class="recycle-balls" id="recycleBalls"></div>
+                  <span class="recycle-capacity" id="recycleCapacity">0 / 5</span>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="conveyor-footer">
+              <span class="footer-icon" aria-hidden="true">✦</span>
+              <span>线团沿闭环顺时针移动，命中同色机器后会将线条送到对应点位</span>
+              <span class="queue-capacity" id="queueCapacity">传送带 0 / 4</span>
+            </div>
+          </article>
+        </section>
+
+        <section class="materials-section">
+          <div class="materials-heading">
+            <div>
+              <p class="section-kicker">03 / YARN DRAWERS</p>
+              <h2>毛线材料区</h2>
+            </div>
+            <p class="materials-instruction"><span class="mouse-icon" aria-hidden="true">↖</span>点击每列最上方的线团，将它送入传送带</p>
+          </div>
+          <div class="materials-grid" id="materialsGrid"></div>
+        </section>
+      </main>
+
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+      <div class="result-overlay" id="resultOverlay" hidden>
+        <div class="result-dialog" role="dialog" aria-modal="true" aria-labelledby="resultTitle">
+          <div class="result-seal" id="resultSeal">✦</div>
+          <p class="section-kicker" id="resultKicker">MISSION COMPLETE</p>
+          <h2 id="resultTitle">花园徽章完成</h2>
+          <p id="resultCopy">所有针脚都已经稳稳落在布面上。</p>
+          <div class="result-summary"><span>完成针脚</span><strong id="resultProgress">39 / 39</strong></div>
+          <button class="primary-button" id="resultReset" type="button"><span>↻</span> 再绣一次</button>
+        </div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
