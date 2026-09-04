@@ -2,23 +2,93 @@
 
 [ext_resource type="Script" uid="uid://cmltb61gpy1ut" path="res://scripts/main.gd" id="1_main"]
 [ext_resource type="Texture2D" uid="uid://c3gw6h3krws6j" path="res://assets/background.png" id="2_background"]
+[ext_resource type="Texture2D" uid="uid://bx3a0jdw333cc" path="res://assets/xiubu.png" id="3_come4"]
 [ext_resource type="Texture2D" uid="uid://cqbnjo51gkmfb" path="res://assets/conveyor.png" id="3_conveyor"]
-[ext_resource type="Texture2D" uid="uid://c7p33uey2xu8j" path="res://assets/yarn.png" id="5_yarn"]
+[ext_resource type="Texture2D" uid="uid://ne3r5ulfp010" path="res://assets/金币.png" id="3_wnkbs"]
+[ext_resource type="Texture2D" uid="uid://b204ohrokh8t0" path="res://assets/2.png" id="4_f6a44"]
+[ext_resource type="Texture2D" uid="uid://d3dghcqxtpt7o" path="res://assets/3.png" id="5_0cbny"]
+[ext_resource type="Texture2D" uid="uid://c3eial2a8wa2" path="res://assets/42.png" id="6_hrvbo"]
 [ext_resource type="Texture2D" uid="uid://b5rtijr65e4bj" path="res://assets/stitched_block.png" id="6_stitched"]
-[ext_resource type="Texture2D" uid="uid://bq3wwv66jop0c" path="res://assets/unstitched_block.png" id="7_unstitched"]
-[ext_resource type="Texture2D" uid="uid://chni4a0rt6gtb" path="res://assets/yarn_sun.png" id="8_yarn_sun"]
-[ext_resource type="Texture2D" uid="uid://b42vemex2n0yo" path="res://assets/yarn_leaf.png" id="9_yarn_leaf"]
-[ext_resource type="Texture2D" uid="uid://cn5hyf0mnr4b" path="res://assets/yarn_lake.png" id="10_yarn_lake"]
-[ext_resource type="Texture2D" uid="uid://hg32o86byjsi" path="res://assets/yarn_deep_blue.png" id="11_yarn_deep_blue"]
+[ext_resource type="Texture2D" uid="uid://bcl8p8xohiefd" path="res://assets/43.png" id="7_uypp3"]
+[ext_resource type="Texture2D" uid="uid://crtwttlpldsja" path="res://assets/45.png" id="8_blkrb"]
+[ext_resource type="Texture2D" uid="uid://mv45vmmrpex7" path="res://assets/41.png" id="9_0cbny"]
+[ext_resource type="Texture2D" uid="uid://cxhj17ool6tnq" path="res://assets/方块底.png" id="11_hrvbo"]
 [ext_resource type="Texture2D" uid="uid://fekp6ga1fr22" path="res://assets/stitched_leaf.png" id="12_stitched_leaf"]
 [ext_resource type="Texture2D" uid="uid://diaabx7dnhd0w" path="res://assets/stitched_lake.png" id="13_stitched_lake"]
 [ext_resource type="Texture2D" uid="uid://fiaoxqjivxon" path="res://assets/stitched_deep_blue.png" id="14_stitched_deep_blue"]
 [ext_resource type="Texture2D" uid="uid://1t4vwi3temsv" path="res://assets/yellow_stitched_reference.png" id="15_stitched_sun"]
-[ext_resource type="Texture2D" uid="uid://beqtqq66tbfha" path="res://assets/recycle_tray.png" id="16_recycle_tray"]
-[ext_resource type="Texture2D" uid="uid://l2w7l8ynxbpu" path="res://assets/recycle_slot.png" id="17_recycle_slot"]
 [ext_resource type="Texture2D" uid="uid://c50lctmedkh2h" path="res://assets/machine_left.png" id="18_machine_left"]
 [ext_resource type="Texture2D" uid="uid://s5u3y35cp7yb" path="res://assets/machine_bottom.png" id="19_machine_bottom"]
 [ext_resource type="Texture2D" uid="uid://damgvup1f7ary" path="res://assets/machine_right.png" id="20_machine_right"]
+[ext_resource type="Script" uid="uid://bv1xkxsk4yvxq" path="res://scripts/level_pattern.gd" id="38_b1qrp"]
+[ext_resource type="Script" uid="uid://0c340ugfr2ah" path="res://scripts/stitch_area_ui.gd" id="39_stitch_area"]
+[ext_resource type="Script" uid="uid://cdw6qak0pjkaj" path="res://scripts/ui_layout_item.gd" id="40_ui_layout"]
+[ext_resource type="Resource" uid="uid://bhc1s6wismtgh" path="res://levels/level_001.tres" id="54_vke2r"]
+[ext_resource type="Resource" uid="uid://bjthiphhtv6f2" path="res://levels/level_002.tres" id="55_uit24"]
+[ext_resource type="Resource" path="res://levels/level_003.tres" id="56_ruth0"]
+[ext_resource type="Texture2D" uid="uid://d2331pl1ydaqx" path="res://assets/link_tiles/00_yarn_red.png" id="link_00"]
+[ext_resource type="Texture2D" uid="uid://buy8o4ubj50km" path="res://assets/link_tiles/01_yarn_orange.png" id="link_01"]
+[ext_resource type="Texture2D" uid="uid://dua1w1ittiix5" path="res://assets/link_tiles/02_yarn_yellow.png" id="link_02"]
+[ext_resource type="Texture2D" uid="uid://b0xv610qyns3a" path="res://assets/link_tiles/03_yarn_olive.png" id="link_03"]
+[ext_resource type="Texture2D" uid="uid://dn7o6sbmtxkj5" path="res://assets/link_tiles/04_yarn_green.png" id="link_04"]
+[ext_resource type="Texture2D" uid="uid://ddeo6v7jw0f85" path="res://assets/link_tiles/05_yarn_cyan.png" id="link_05"]
+[ext_resource type="Texture2D" uid="uid://dv7gjl6ohcm2d" path="res://assets/link_tiles/06_yarn_blue.png" id="link_06"]
+[ext_resource type="Texture2D" uid="uid://qsgm1l1u1xqc" path="res://assets/link_tiles/07_yarn_purple.png" id="link_07"]
+[ext_resource type="Texture2D" uid="uid://ch02gekkwegax" path="res://assets/link_tiles/08_yarn_pink.png" id="link_08"]
+[ext_resource type="Texture2D" uid="uid://bswnacvx22jc7" path="res://assets/link_tiles/00_coral_1.png" id="link_new_00"]
+[ext_resource type="Texture2D" uid="uid://cd8hawsl8kq4" path="res://assets/link_tiles/01_coral_2.png" id="link_new_01"]
+[ext_resource type="Texture2D" uid="uid://0lbepbcjqnde" path="res://assets/link_tiles/02_coral_3.png" id="link_new_02"]
+[ext_resource type="Texture2D" uid="uid://dumhi3r7q7huj" path="res://assets/link_tiles/03_coral_4.png" id="link_new_03"]
+[ext_resource type="Texture2D" uid="uid://cmtmj5t3kw67w" path="res://assets/link_tiles/04_coral_5.png" id="link_new_04"]
+[ext_resource type="Texture2D" uid="uid://hyuonuett380" path="res://assets/link_tiles/05_coral_6.png" id="link_new_05"]
+[ext_resource type="Texture2D" uid="uid://bh2dm650uq7lp" path="res://assets/link_tiles/06_orange_1.png" id="link_new_06"]
+[ext_resource type="Texture2D" uid="uid://dq2n8psdfku87" path="res://assets/link_tiles/07_orange_2.png" id="link_new_07"]
+[ext_resource type="Texture2D" uid="uid://rypc3kitb8nd" path="res://assets/link_tiles/08_orange_3.png" id="link_new_08"]
+[ext_resource type="Texture2D" uid="uid://dkb583sj7yads" path="res://assets/link_tiles/09_orange_4.png" id="link_new_09"]
+[ext_resource type="Texture2D" uid="uid://qnsvbd7gj15e" path="res://assets/link_tiles/10_orange_5.png" id="link_new_10"]
+[ext_resource type="Texture2D" uid="uid://dvnmxe7peg76x" path="res://assets/link_tiles/11_orange_6.png" id="link_new_11"]
+[ext_resource type="Texture2D" uid="uid://b7rm1sp3ifcj5" path="res://assets/link_tiles/12_sun_1.png" id="link_new_12"]
+[ext_resource type="Texture2D" uid="uid://bdjweqd4p7fwr" path="res://assets/link_tiles/13_sun_2.png" id="link_new_13"]
+[ext_resource type="Texture2D" uid="uid://dltnjiapsqoei" path="res://assets/link_tiles/14_sun_3.png" id="link_new_14"]
+[ext_resource type="Texture2D" uid="uid://jg2qd3f2vbge" path="res://assets/link_tiles/15_sun_4.png" id="link_new_15"]
+[ext_resource type="Texture2D" uid="uid://d24kklm1op5ut" path="res://assets/link_tiles/16_sun_5.png" id="link_new_16"]
+[ext_resource type="Texture2D" uid="uid://dpf0qlh1jd3w8" path="res://assets/link_tiles/17_sun_6.png" id="link_new_17"]
+[ext_resource type="Texture2D" uid="uid://dptcswmmh3aq0" path="res://assets/link_tiles/18_olive_1.png" id="link_new_18"]
+[ext_resource type="Texture2D" uid="uid://cdidlecaqleq6" path="res://assets/link_tiles/19_olive_2.png" id="link_new_19"]
+[ext_resource type="Texture2D" uid="uid://dgkfa3qveqb4s" path="res://assets/link_tiles/20_olive_3.png" id="link_new_20"]
+[ext_resource type="Texture2D" uid="uid://b7cpaovunt00i" path="res://assets/link_tiles/21_olive_4.png" id="link_new_21"]
+[ext_resource type="Texture2D" uid="uid://ds5su4nckd1rr" path="res://assets/link_tiles/22_olive_5.png" id="link_new_22"]
+[ext_resource type="Texture2D" uid="uid://8vfsvwrtecqc" path="res://assets/link_tiles/23_olive_6.png" id="link_new_23"]
+[ext_resource type="Texture2D" uid="uid://d00hrii5r3tb2" path="res://assets/link_tiles/24_leaf_1.png" id="link_new_24"]
+[ext_resource type="Texture2D" uid="uid://brwyc2p6ik5j2" path="res://assets/link_tiles/25_leaf_2.png" id="link_new_25"]
+[ext_resource type="Texture2D" uid="uid://b41elllaxfryh" path="res://assets/link_tiles/26_leaf_3.png" id="link_new_26"]
+[ext_resource type="Texture2D" uid="uid://bwn2lixm1w1b0" path="res://assets/link_tiles/27_leaf_4.png" id="link_new_27"]
+[ext_resource type="Texture2D" uid="uid://cu1fw6b3w80kn" path="res://assets/link_tiles/28_leaf_5.png" id="link_new_28"]
+[ext_resource type="Texture2D" uid="uid://c4yg0r655bqkn" path="res://assets/link_tiles/29_leaf_6.png" id="link_new_29"]
+[ext_resource type="Texture2D" uid="uid://be5q4nyqgf74e" path="res://assets/link_tiles/30_lake_1.png" id="link_new_30"]
+[ext_resource type="Texture2D" uid="uid://bhjlqr1c5lbau" path="res://assets/link_tiles/31_lake_2.png" id="link_new_31"]
+[ext_resource type="Texture2D" uid="uid://d0jcqmprcjbnp" path="res://assets/link_tiles/32_lake_3.png" id="link_new_32"]
+[ext_resource type="Texture2D" uid="uid://8hgn43hvqjbi" path="res://assets/link_tiles/33_lake_4.png" id="link_new_33"]
+[ext_resource type="Texture2D" uid="uid://dq3kaf7jne7xf" path="res://assets/link_tiles/34_lake_5.png" id="link_new_34"]
+[ext_resource type="Texture2D" uid="uid://carepsew8t1n2" path="res://assets/link_tiles/35_lake_6.png" id="link_new_35"]
+[ext_resource type="Texture2D" uid="uid://47axb5p2k11g" path="res://assets/link_tiles/36_deep_blue_1.png" id="link_new_36"]
+[ext_resource type="Texture2D" uid="uid://clgc4p5my5vcs" path="res://assets/link_tiles/37_deep_blue_2.png" id="link_new_37"]
+[ext_resource type="Texture2D" uid="uid://ckr5vwnua6iyk" path="res://assets/link_tiles/38_deep_blue_3.png" id="link_new_38"]
+[ext_resource type="Texture2D" uid="uid://duukjjmj07emj" path="res://assets/link_tiles/39_deep_blue_4.png" id="link_new_39"]
+[ext_resource type="Texture2D" uid="uid://cbcxmu5eliihj" path="res://assets/link_tiles/40_deep_blue_5.png" id="link_new_40"]
+[ext_resource type="Texture2D" uid="uid://b2xrk5x5f0vgg" path="res://assets/link_tiles/41_deep_blue_6.png" id="link_new_41"]
+[ext_resource type="Texture2D" uid="uid://dehmifp1ut3ch" path="res://assets/link_tiles/42_purple_1.png" id="link_new_42"]
+[ext_resource type="Texture2D" uid="uid://dyv1of4g1r8l1" path="res://assets/link_tiles/43_purple_2.png" id="link_new_43"]
+[ext_resource type="Texture2D" uid="uid://d1f7ebcqb3lgm" path="res://assets/link_tiles/44_purple_3.png" id="link_new_44"]
+[ext_resource type="Texture2D" uid="uid://dh28p4vyy5txc" path="res://assets/link_tiles/45_purple_4.png" id="link_new_45"]
+[ext_resource type="Texture2D" uid="uid://c8uke70i2jh73" path="res://assets/link_tiles/46_purple_5.png" id="link_new_46"]
+[ext_resource type="Texture2D" uid="uid://cf6i4c1tydyn1" path="res://assets/link_tiles/47_purple_6.png" id="link_new_47"]
+[ext_resource type="Texture2D" uid="uid://cys4biac3vefj" path="res://assets/link_tiles/48_pink_1.png" id="link_new_48"]
+[ext_resource type="Texture2D" uid="uid://d0fu8p2s25dii" path="res://assets/link_tiles/49_pink_2.png" id="link_new_49"]
+[ext_resource type="Texture2D" uid="uid://ehjxba4avcnn" path="res://assets/link_tiles/50_pink_3.png" id="link_new_50"]
+[ext_resource type="Texture2D" uid="uid://csq01ghwpylb3" path="res://assets/link_tiles/51_pink_4.png" id="link_new_51"]
+[ext_resource type="Texture2D" uid="uid://bgqr0jx5devlm" path="res://assets/link_tiles/52_pink_5.png" id="link_new_52"]
+[ext_resource type="Texture2D" uid="uid://cq7bi2tal74iu" path="res://assets/link_tiles/53_pink_6.png" id="link_new_53"]
 
 [node name="Main" type="Control" unique_id=1268834862]
 layout_mode = 3
@@ -29,27 +99,151 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_main")
-pattern_grid_size = Vector2i(10, 10)
-pattern_layout = "cc..dd..cc\nc..yyyy..c\n..yyyyyy..\n.yyggggyy.\nyyggbbggyy\nyyggbbggyy\n.yyggggyy.\n..yyyyyy..\nc..yyyy..c\ncc..dd..cc"
 background_texture = ExtResource("2_background")
-recycle_tray_texture = ExtResource("16_recycle_tray")
-recycle_slot_texture = ExtResource("17_recycle_slot")
-unstitched_block_texture = ExtResource("7_unstitched")
+score_panel_texture = ExtResource("3_wnkbs")
+level_panel_texture = ExtResource("4_f6a44")
+pause_texture = ExtResource("5_0cbny")
+add_time_texture = ExtResource("6_hrvbo")
+shuffle_texture = ExtResource("7_uypp3")
+auto_clear_texture = ExtResource("8_blkrb")
+tool_slot_background_texture = ExtResource("9_0cbny")
+board_texture = ExtResource("3_come4")
+link_tile_background_texture = ExtResource("11_hrvbo")
+link_tile_textures = Array[Texture2D]([ExtResource("link_new_00"), ExtResource("link_new_01"), ExtResource("link_new_02"), ExtResource("link_new_03"), ExtResource("link_new_04"), ExtResource("link_new_05"), ExtResource("link_new_06"), ExtResource("link_new_07"), ExtResource("link_new_08"), ExtResource("link_new_09"), ExtResource("link_new_10"), ExtResource("link_new_11"), ExtResource("link_new_12"), ExtResource("link_new_13"), ExtResource("link_new_14"), ExtResource("link_new_15"), ExtResource("link_new_16"), ExtResource("link_new_17"), ExtResource("link_new_18"), ExtResource("link_new_19"), ExtResource("link_new_20"), ExtResource("link_new_21"), ExtResource("link_new_22"), ExtResource("link_new_23"), ExtResource("link_new_24"), ExtResource("link_new_25"), ExtResource("link_new_26"), ExtResource("link_new_27"), ExtResource("link_new_28"), ExtResource("link_new_29"), ExtResource("link_new_30"), ExtResource("link_new_31"), ExtResource("link_new_32"), ExtResource("link_new_33"), ExtResource("link_new_34"), ExtResource("link_new_35"), ExtResource("link_new_36"), ExtResource("link_new_37"), ExtResource("link_new_38"), ExtResource("link_new_39"), ExtResource("link_new_40"), ExtResource("link_new_41"), ExtResource("link_new_42"), ExtResource("link_new_43"), ExtResource("link_new_44"), ExtResource("link_new_45"), ExtResource("link_new_46"), ExtResource("link_new_47"), ExtResource("link_new_48"), ExtResource("link_new_49"), ExtResource("link_new_50"), ExtResource("link_new_51"), ExtResource("link_new_52"), ExtResource("link_new_53")])
 belt_texture = ExtResource("3_conveyor")
 machine_left_texture = ExtResource("18_machine_left")
 machine_bottom_texture = ExtResource("19_machine_bottom")
 machine_right_texture = ExtResource("20_machine_right")
-order_bubble_offset = Vector2(34, 6)
-machine_counter_size = Vector2(52, 24)
-yarn_textures = Array[Texture2D]([ExtResource("5_yarn"), ExtResource("8_yarn_sun"), ExtResource("9_yarn_leaf"), ExtResource("10_yarn_lake"), ExtResource("11_yarn_deep_blue")])
-stitched_block_textures = Array[Texture2D]([ExtResource("6_stitched"), ExtResource("15_stitched_sun"), ExtResource("12_stitched_leaf"), ExtResource("13_stitched_lake"), ExtResource("14_stitched_deep_blue")])
-belt_panel_rect = Rect2(12, 120, 366, 390)
-materials_panel_rect = Rect2(12, 520, 366, 312)
-recycle_tray_rect = Rect2(48, 550, 294, 62)
-board_layout_rect = Rect2(78, 193, 236, 236)
-material_lane_1_rect = Rect2(18, 618, 82, 166)
-material_lane_2_rect = Rect2(103, 618, 82, 166)
-material_lane_3_rect = Rect2(188, 618, 82, 166)
-material_lane_4_rect = Rect2(273, 618, 82, 166)
-machine_counter_offset = Vector2(20, -38)
+yarn_textures = Array[Texture2D]([ExtResource("link_00"), ExtResource("link_01"), ExtResource("link_02"), ExtResource("link_03"), ExtResource("link_04"), ExtResource("link_05"), ExtResource("link_06"), ExtResource("link_07"), ExtResource("link_08")])
+stitched_block_textures = Array[Texture2D]([ExtResource("6_stitched"), null, ExtResource("15_stitched_sun"), null, ExtResource("12_stitched_leaf"), ExtResource("13_stitched_lake"), ExtResource("14_stitched_deep_blue"), null, null])
+level_configs = Array[ExtResource("38_b1qrp")]([ExtResource("54_vke2r"), ExtResource("55_uit24"), ExtResource("56_ruth0")])
+level_files = Array[String](["res://levels/level_001.tres", "res://levels/level_002.tres", "res://levels/level_003.tres"])
+game_grid_layout = "...........
+...........
+...........
+.000000000.
+.000000000.
+.000000000.
+.000000000.
+.00.....00.
+.00.....00.
+.00.....00.
+.00.....00.
+.00.....00.
+.000000000.
+.000000000.
+.000000000.
+.000000000.
+.000000000.
+.000000000.
+.000000000.
+.000000000.
+.000000000.
+.0000..000.
+...........
+..........."
+stitch_requirement_layout = "00..44..00
+0..1111..0
+..111111..
+.11222211.
+1122332211
+1122332211
+.11222211.
+..111111..
+0..1111..0
+00..44..00"
+layout_grid_size = Vector2i(11, 25)
+belt_grid_position = Vector2i(3, 7)
+belt_grid_size = Vector2i(5, 5)
+layout_configured = true
+link_board_grid_position = Vector2i(1, 11)
+link_board_grid_size = Vector2i(18, 8)
 belt_path_points = PackedVector2Array(0.1, 0.1, 0.88, 0.1, 0.9, 0.9, 0.15, 0.9, 0.15, 0.31)
+link_cell_gap_ratio = 0.0
+link_tile_selected_color = Color(0.029548936, 0.5569587, 0.10164801, 0.627451)
+board_layout_rect = Rect2(86.195, 146.435, 100, 100)
+dynamic_machine_size = Vector2(30, 30)
+
+[node name="StitchAreaUI" type="Control" parent="." unique_id=2108799180]
+anchors_preset = 0
+offset_left = 137.0
+offset_top = 267.0
+offset_right = 251.0
+offset_bottom = 381.0
+mouse_filter = 2
+script = ExtResource("39_stitch_area")
+
+[node name="UI" type="Control" parent="." unique_id=972986227]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -32.0
+offset_top = 30.0
+offset_right = -32.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ScoreUI" type="Control" parent="UI" unique_id=2065993242]
+anchors_preset = 0
+offset_left = 27.0
+offset_top = 18.0
+offset_right = 153.0
+offset_bottom = 64.0
+scale = Vector2(0.8, 0.8)
+mouse_filter = 2
+script = ExtResource("40_ui_layout")
+
+[node name="LevelUI" type="Control" parent="UI" unique_id=1704444154]
+anchors_preset = 0
+offset_left = 161.0
+offset_top = 18.0
+offset_right = 289.0
+offset_bottom = 64.0
+scale = Vector2(0.8, 0.8)
+mouse_filter = 2
+script = ExtResource("40_ui_layout")
+item_type = 1
+
+[node name="PauseUI" type="Control" parent="UI" unique_id=1890028628]
+anchors_preset = 0
+offset_left = 334.0
+offset_top = 19.0
+offset_right = 398.99997
+offset_bottom = 67.75
+scale = Vector2(0.6, 0.8)
+mouse_filter = 2
+script = ExtResource("40_ui_layout")
+item_type = 2
+
+[node name="AddTimeUI" type="Control" parent="UI" unique_id=1821906967]
+anchors_preset = 0
+offset_left = 18.0
+offset_top = 788.0
+offset_right = 90.0
+offset_bottom = 830.0
+mouse_filter = 2
+script = ExtResource("40_ui_layout")
+item_type = 3
+
+[node name="ShuffleUI" type="Control" parent="UI" unique_id=629160854]
+anchors_preset = 0
+offset_left = 141.0
+offset_top = 788.0
+offset_right = 213.0
+offset_bottom = 830.0
+mouse_filter = 2
+script = ExtResource("40_ui_layout")
+item_type = 4
+
+[node name="AutoClearUI" type="Control" parent="UI" unique_id=1311516913]
+anchors_preset = 0
+offset_left = 264.0
+offset_top = 788.0
+offset_right = 336.0
+offset_bottom = 830.0
+mouse_filter = 2
+script = ExtResource("40_ui_layout")
+item_type = 5

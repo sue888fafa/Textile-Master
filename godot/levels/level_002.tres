@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="StitchLevelPattern" format=3 uid="uid://bjthiphhtv6f2"]
+
+[ext_resource type="Script" uid="uid://bv1xkxsk4yvxq" path="res://scripts/level_pattern.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+level_name = "第 03 关"
+game_grid_layout = "...........
+...........
+...........
+.000000000.
+.000000000.
+.000000000.
+.000000000.
+.00.....00.
+.00.....00.
+.00.....00.
+.00.....00.
+.00.....00.
+.000000000.
+.000000000.
+.000000000.
+.000000000.
+.000000000.
+.000000000.
+.000000000.
+.000000000.
+.000000000.
+..0000000..
+...........
+...........
+..........."
+stitch_requirement_layout = "00..44..00
+0..1111..0
+..111111..
+.11222211.
+1122332211
+1122332211
+.11222211.
+..111111..
+0..1111..0
+00..44..00"
+layout_grid_size = Vector2i(11, 25)
+belt_grid_position = Vector2i(3, 7)
+belt_grid_size = Vector2i(5, 5)
+layout_configured = true
